@@ -1,8 +1,7 @@
 import './App.css';
-
 import CardList from "./components/cardlist/cardlist.component";
 import { SearchBar } from "./components/searchbar/searchbar.component";
-
+import axios from 'axios';
 import React, { useState, useEffect } from "react";
   
 function App() {
@@ -10,14 +9,27 @@ function App() {
   const [filteredMonsters, setFilteredMonsters] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
+  // This is for Fetch (which was replaced with Axios)
+  // useEffect(() => {
+  //   const fetchMonsters = async () => {
+  //     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+  //     const monsters = await response.json();
+  //     setMonsters(monsters)
+  //   };
+  //   fetchMonsters();
+  // }, []); // empty array of dependencies, so runs once on initially load 
+
+  // Using Axios (instead of Fetch):
   useEffect(() => {
-    const fetchMonsters = async () => {
-      const response = await fetch("https://jsonplaceholder.typicode.com/users");
-      const monsters = await response.json();
-      setMonsters(monsters)
+    const fetchUsers = async () => {
+      const response = await axios(
+        'https://jsonplaceholder.typicode.com/users',
+      );
+      setMonsters(response.data);
     };
-    fetchMonsters();
-  }, []); // empty array of dependencies, so runs once on initially load 
+    fetchUsers();
+  }, []);
+    
 
   useEffect(() => {
     let filtered = [];
