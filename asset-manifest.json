@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/css/main.26948e3b.css",
+    "main.js": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/js/main.cf46dffa.js",
+    "static/js/787.cf35b873.chunk.js": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/js/787.cf35b873.chunk.js",
+    "index.html": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/index.html",
+    "main.26948e3b.css.map": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/css/main.26948e3b.css.map",
+    "main.cf46dffa.js.map": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/js/main.cf46dffa.js.map",
+    "787.cf35b873.chunk.js.map": "/MarlianneSadoway/CMPT315-Lab3-Practice-monster-search/static/js/787.cf35b873.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26948e3b.css",
+    "static/js/main.cf46dffa.js"
+  ]
+}
